@@ -179,6 +179,22 @@ section {
     overflow-x: hidden;
 }
 
+.navbar.open .navbar-content {
+    width: 30vw;
+}
+
+.navbar-page-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--grey);
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
 .navbar-close {
     position: absolute;
     top: 1rem;
@@ -197,11 +213,11 @@ section {
 }
 
 .navbar-content-brand {
-    padding: 1rem
+    padding: 2rem 1rem 1rem 1rem;
 }
 
 .navbar-content-brand img {
-    width: 60%;
+    width: 50%;
     display: block;
     margin: auto;
 }
