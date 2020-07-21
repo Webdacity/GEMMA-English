@@ -1,3 +1,112 @@
 /* Imports */
 
-@import "./main.css"
+@import "./main.css";
+
+/* Variables */
+
+:root {
+    --blue: #141546;
+    --yellow: #c69636;
+    --grey: #1a1a1a;
+    --light-grey: #e9eaec;
+    --light-blue: #f5f6f8;
+    --serif: "Playfair Display";
+    --sans-serif: "Raleway"
+}
+
+/* ------------------------------- */
+
+@media only screen and (max-width: 991px) {
+
+
+    /* Home Page */
+
+    #home-services {
+        justify-content: space-around;
+        margin-top: 4rem;
+    }
+
+    .service {
+        margin-top: 3rem;
+    }
+
+}
+
+
+
+/* ----------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+
+    /* Sections */
+
+    .gemma-section .section-number {
+        margin-bottom: 4rem;
+    }
+
+    .gemma-section .section-number h1 {
+        font-size: 5.5rem;
+    }
+
+    .gemma-section .section-right .section-text {
+        border-left: none;
+        padding-left: 15px;
+    }
+
+    .gemma-section .section-left .section-text {
+        border-right: none;
+        padding-right: 15px;
+    }
+
+    /* Home page */
+
+    #home-about-stefanos img {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+
+    /* Footer */
+
+    footer img {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+
+    footer .row>div {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+/* ----------------------------------- */
+
+@media only screen and (max-width: 576px) {
+
+
+    /* Footer */
+
+    footer {
+        padding: 1rem 10% 0 10%;
+    }
+
+    footer ul {
+        border-left: none;
+        border-bottom: 1px solid var(--yellow);
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .footer-contact ul:last-child {
+        border-bottom: none;
+    }
+
+    .footer-contact {
+        margin-bottom: 0 !important;
+    }
+
+}

@@ -296,7 +296,9 @@ footer {
 }
 
 footer img {
-    width: 50%;
+    width: 60%;
+    display: block;
+    margin: auto;
 }
 
 footer ul {
@@ -338,7 +340,8 @@ footer a:hover {
     margin-top: 1rem;
 }
 
-.footer-copy p {
+.footer-copy p,
+.footer-copy a {
     font-size: 0.75rem;
     margin: 0.1rem;
 }
@@ -384,7 +387,7 @@ footer a:hover {
 }
 
 .quote-section.light img {
-    opacity: 0.25;
+    opacity: 0.20;
 }
 
 .quote-section.light .line {
@@ -423,7 +426,7 @@ footer a:hover {
     background-color: var(--light-blue);
 }
 
-.home-section .section-number h1 {
+.gemma-section .section-number h1 {
     border-left: 1px solid;
     border-right: 1px solid;
     display: inline-block;
@@ -432,92 +435,92 @@ footer a:hover {
     padding: 0 2rem;
 }
 
-.home-section.light .section-number h1 {
+.gemma-section.light .section-number h1 {
     color: var(--blue);
     border-color: var(--blue);
 }
 
-.home-section.dark .section-number h1 {
+.gemma-section.dark .section-number h1 {
     border-color: var(--yellow);
 }
 
-.home-section.light .section-number.yellow h1 {
+.gemma-section.light .section-number.yellow h1 {
     color: var(--yellow);
 }
 
-.home-section .section-align-left .section-number {
+.gemma-section .section-left .section-number {
     text-align: right;
 }
 
-.home-section .section-align-left .section-text {
+.gemma-section .section-left .section-text {
     border-right: 1px solid;
     padding-right: 2rem;
     text-align: right;
 }
 
-.home-section .section-align-right .section-text {
+.gemma-section .section-right .section-text {
     border-left: 1px solid;
     padding-left: 2rem;
     text-align: left;
 }
 
-.home-section.light .section-text {
+.gemma-section.light .section-text {
     border-color: var(--blue);
 }
 
-.home-section.dark {
+.gemma-section.dark {
     background-color: var(--blue);
     color: var(--light-blue);
 }
 
-.home-section.dark .section-text {
+.gemma-section.dark .section-text {
     border-color: var(--yellow);
 }
 
-.home-section .section-text h1 {
+.gemma-section .section-text h1 {
     font-size: 2.2rem;
     letter-spacing: 1px;
     font-weight: 500;
     margin: 0;
 }
 
-.home-section.light .section-text h1 {
+.gemma-section.light .section-text h1 {
     color: var(--yellow);
 }
 
-.home-section .section-text .line {
+.gemma-section .section-text .line {
     width: 4rem;
     height: 2px;
     margin: 0.5rem 0;
 }
 
-.home-section .section-align-left .line {
+.gemma-section .section-left .line {
     margin-left: auto;
 }
 
-.home-section.light .section-text .line {
+.gemma-section.light .section-text .line {
     background-color: var(--yellow);
 }
 
-.home-section.dark .section-text .line {
+.gemma-section.dark .section-text .line {
     background-color: var(--yellow);
 }
 
-.home-section .section-text h3 {
+.gemma-section .section-text h3 {
     margin: 1.5rem 0;
     font-size: 1.25rem;
     font-style: italic;
 }
 
-.home-section.light .section-text h3 {
+.gemma-section.light .section-text h3 {
     color: var(--blue);
 }
 
-.home-section.dark .section-text h3 {
+.gemma-section.dark .section-text h3 {
     color: var(--yellow);
 }
 
-.home-section .section-text p {
+.gemma-section .section-text p {
     font-size: 0.9rem;
     line-height: 1.5;
 }
@@ -545,7 +548,7 @@ footer a:hover {
     padding: 0 2rem;
 }
 
-.home-section .service {
+.gemma-section .service {
     text-align: center;
     padding: 2rem;
     -webkit-box-shadow: 8px 8px 8px 0px rgba(26, 26, 26, 0.15);
@@ -553,14 +556,14 @@ footer a:hover {
     box-shadow: 8px 8px 8px 0px rgba(26, 26, 26, 0.15);
 }
 
-.home-section .service div {
+.gemma-section .service div {
     width: 90%;
     height: 1px;
     margin: 1rem auto;
     background-color: var(--yellow);
 }
 
-.home-section .service p {
+.gemma-section .service p {
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
