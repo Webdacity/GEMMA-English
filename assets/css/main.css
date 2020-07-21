@@ -41,6 +41,10 @@ h6 {
     vertical-align: text-bottom;
 }
 
+.container {
+    padding: 0 1.5rem;
+}
+
 section {
     padding: 8rem 0;
 }
@@ -115,10 +119,19 @@ section {
 .navbar {
     display: flex;
     justify-content: space-between;
-
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
     -webkit-box-shadow: 0px 5px 8px 0px rgba(26, 26, 26, 0.15);
     -moz-box-shadow: 0px 5px 8px 0px rgba(26, 26, 26, 0.15);
     box-shadow: 0px 5px 8px 0px rgba(26, 26, 26, 0.15);
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    z-index: 150;
 }
 
 .navbar-brand img {
@@ -417,30 +430,7 @@ footer a:hover {
 }
 
 
-
-/* ------------------------------------------------ */
-
-/* HOME PAGE */
-
-/* Home Landing Section */
-
-.section-home-landing {
-    padding: 0;
-    width: 100vw;
-    min-height: 100vh;
-}
-
-.section-home-landing img {
-    width: 90%;
-    display: block;
-    margin: auto;
-}
-
-/* Home About Section */
-
-#section-home-about {
-    background-color: var(--light-blue);
-}
+/* Gemma Sections */
 
 .gemma-section .section-number h1 {
     border-left: 1px solid;
@@ -449,6 +439,19 @@ footer a:hover {
     font-size: 7rem;
     margin: 0;
     padding: 0 2rem;
+}
+
+.gemma-section .section-number.sub h1 {
+    font-size: 4rem;
+}
+
+.gemma-section.light .section-number.sub h1 {
+    color: var(--yellow);
+}
+
+.gemma-section.dark .section-number.sub h1 {
+    color: var(--yellow);
+    border-color: var(--light-blue);
 }
 
 .gemma-section.light .section-number h1 {
@@ -541,6 +544,51 @@ footer a:hover {
     line-height: 1.5;
 }
 
+.gemma-section.main-page-section {
+    padding-bottom: 2rem;
+}
+
+.gemma-section.main-page-section .section-number h1 {
+    border: none;
+}
+
+.gemma-section.main-page-section .section-left .section-number {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 9rem;
+}
+
+.gemma-section.main-page-section .section-left .section-number h1 {
+    font-size: 100%
+}
+
+
+/* ------------------------------------------------ */
+
+/* HOME PAGE */
+
+/* Home Landing Section */
+
+.section-home-landing {
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.section-home-landing img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+/* Home About Section */
+
+#section-home-about {
+    background-color: var(--light-blue);
+}
+
+
 #home-about-stefanos {
     padding-top: 7rem;
 }
@@ -555,6 +603,8 @@ footer a:hover {
     padding: 2rem 0;
     justify-content: center;
 }
+
+
 
 /* Home Concept Section*/
 
@@ -623,4 +673,85 @@ footer a:hover {
 
 #section-home-contact .my-button {
     margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+
+/* CONCEPT PAGE */
+
+#section-concept-approach h5 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#section-concept-therapy h3 {
+    margin-bottom: 2.5rem;
+}
+
+#section-concept-services .my-button {
+    margin-top: 2rem;
+}
+
+#section-concept-indications ul {
+    padding: 0;
+    list-style: none;
+}
+
+#section-concept-indications ul li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+#section-concept-indications ul li i {
+    color: var(--blue);
+    margin-right: 0.3rem;
+}
+
+/* -------------------------------- */
+
+/* CONTACT PAGE */
+
+.contact-details p {
+    /* font-weight: 500; */
+    margin: 1.5rem 0 0 0
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.contact-details a:link:hover {
+    color: var(--yellow);
+}
+
+.contact-details a i {
+    color: var(--yellow);
+    margin-right: 0.25rem;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.contact-details a:link:hover i {
+    margin-right: 0.5rem;
+}
+
+.contact-details iframe {
+    width: 100%;
+    border: none;
+    margin-top: 2rem;
+    min-height: 60vh;
 }
