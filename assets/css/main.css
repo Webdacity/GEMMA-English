@@ -36,6 +36,11 @@ h6 {
     font-family: var(--serif);
 }
 
+.material-icons {
+    font-size: 1rem;
+    vertical-align: text-bottom;
+}
+
 section {
     padding: 8rem 0;
 }
@@ -85,7 +90,7 @@ section {
     color: var(--light-blue);
     display: inline-block;
     padding: 0.25rem 1rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: 0.5s ease;
@@ -287,15 +292,50 @@ section {
 
 footer {
     background-color: var(--light-grey);
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
+footer img {
+    width: 50%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid var(--yellow);
+    padding-left: 1rem;
+}
+
+footer a {
+    color: var(--grey);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.footer-contact a {
+    text-transform: lowercase;
+}
 
 .footer-copy {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid var(--blue);
     padding: 0.5rem 0;
+    margin-top: 1rem;
 }
 
 .footer-copy p {
@@ -324,7 +364,7 @@ footer {
 }
 
 .quote-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     z-index: 5;
     position: relative;
@@ -546,9 +586,22 @@ footer {
     font-weight: 500;
     font-size: 0.9rem;
     margin-right: 1rem;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.home-contact-details a:hover {
+    color: var(--yellow);
 }
 
 .home-contact-details a i {
     margin-right: 0.3rem;
     font-size: 1rem;
+}
+
+#section-home-contact .my-button {
+    margin-top: 1rem;
 }
