@@ -548,20 +548,6 @@ footer a:hover {
     padding-bottom: 2rem;
 }
 
-.gemma-section.main-page-section .section-number h1 {
-    border: none;
-}
-
-.gemma-section.main-page-section .section-left .section-number {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    font-size: 9rem;
-}
-
-.gemma-section.main-page-section .section-left .section-number h1 {
-    font-size: 100%
-}
 
 
 /* ------------------------------------------------ */
