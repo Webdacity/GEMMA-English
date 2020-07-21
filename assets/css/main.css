@@ -321,7 +321,7 @@ section {
 
 footer {
     background-color: var(--light-grey);
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 footer img {
@@ -340,7 +340,7 @@ footer ul {
 
 footer a {
     color: var(--grey);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     margin: 0.75rem 0;
     font-size: 0.9rem;
@@ -361,12 +361,16 @@ footer a:hover {
     text-transform: lowercase;
 }
 
+.footer-contact a i {
+    margin-right: 0.4rem;
+}
+
 .footer-copy {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid var(--blue);
     padding: 0.5rem 0;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .footer-copy p,
@@ -492,6 +496,7 @@ footer a:hover {
     color: var(--light-blue);
 }
 
+
 .gemma-section.dark .section-text {
     border-color: var(--yellow);
 }
@@ -517,13 +522,11 @@ footer a:hover {
     margin-left: auto;
 }
 
-.gemma-section.light .section-text .line {
-    background-color: var(--yellow);
-}
-
+.gemma-section.light .section-text .line,
 .gemma-section.dark .section-text .line {
     background-color: var(--yellow);
 }
+
 
 .gemma-section .section-text h3 {
     margin: 1.5rem 0;
@@ -531,7 +534,8 @@ footer a:hover {
     font-style: italic;
 }
 
-.gemma-section.light .section-text h3 {
+.gemma-section.light .section-text h3,
+.gemma-section.yellow .section-text h3 {
     color: var(--blue);
 }
 
@@ -545,7 +549,15 @@ footer a:hover {
 }
 
 .gemma-section.main-page-section {
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
+}
+
+.gemma-section.main-page-section .container>.line {
+    margin: auto;
+    width: 75%;
+    height: 2px;
+    background-color: var(--yellow);
+    margin-top: 4rem;
 }
 
 
@@ -684,15 +696,87 @@ footer a:hover {
 }
 
 #section-concept-indications ul li {
-    display: flex;
-    align-items: center;
     margin: 0.5rem 0;
+    display: flex;
 }
 
 #section-concept-indications ul li i {
     color: var(--blue);
     margin-right: 0.3rem;
+    margin-top: 0.25rem;
 }
+
+
+
+/* -------------------------------- */
+
+/* THERAPY PAGE */
+
+
+#section-therapy-steps h5 {
+    /* font-family: var(--sans-serif); */
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--blue);
+    margin-top: 4rem;
+}
+
+#section-therapy-steps h5 span {
+    background-color: var(--yellow);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.75rem;
+}
+
+#section-therapy-steps p span {
+    font-weight: 500;
+}
+
+#section-therapy-steps ul {
+    padding: 0;
+    list-style: none;
+}
+
+#section-therapy-steps ul li {
+    margin: 0.5rem 0;
+    display: flex;
+}
+
+#section-therapy-steps ul li i {
+    color: var(--blue);
+    margin-right: 0.3rem;
+    margin-top: 0.25rem;
+}
+
+#section-therapy-steps button {
+    margin-top: 1rem;
+}
+
+#section-therapy-costs p span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#section-therapy-costs ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+#section-therapy-costs ul li {
+    margin: 1rem;
+    border-right: 2px solid var(--yellow);
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
 
 /* -------------------------------- */
 
