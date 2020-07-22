@@ -865,6 +865,21 @@ form textarea:focus {
     font-weight: 500;
 }
 
+form input::placeholder,
+form textarea::placeholder {
+    font-style: italic;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+    opacity: 0;
+}
+
 form label {
     font-weight: 500;
     font-size: 0.95rem;
@@ -919,4 +934,51 @@ form.dark-form textarea {
 
 form.dark-form textarea:focus {
     border-color: var(--yellow);
+}
+
+.form-rating {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.form-rating span {
+    border: 1px solid var(--blue);
+    border-left: none;
+    width: 10%;
+    text-align: center;
+    padding: 0.3rem 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.form-rating span:first-child {
+    border-left: 1px solid var(--blue);
+}
+
+.form-rating span.clicked {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+.form-rating span:hover {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+.form-rating-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-rating-text label {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0.25rem 0 1rem 0;
 }

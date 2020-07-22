@@ -35,3 +35,10 @@ $(document).ready(() => {
     });
 
 });
+
+// Feedback Forms
+
+$("form .form-rating span").click(function () {
+    $("form .form-rating span").removeClass("clicked");
+    $(this).addClass("clicked");
+});

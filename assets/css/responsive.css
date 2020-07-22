@@ -100,6 +100,18 @@
     }
 
 
+    /* Feedback Page */
+
+    .form-rating span {
+        width: 20%;
+        margin-bottom: 0.25rem;
+    }
+
+    .form-rating span:nth-child(6) {
+        border-left: 1px solid var(--blue);
+    }
+
+
     /* Footer */
 
     footer {
