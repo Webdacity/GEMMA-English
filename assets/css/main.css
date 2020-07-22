@@ -825,3 +825,98 @@ footer a:hover {
     margin-top: 2rem;
     min-height: 60vh;
 }
+
+
+
+
+/* ---------------------- */
+
+/* FEEDBACK PAGE */
+
+form {
+    margin-top: 2rem;
+}
+
+form input,
+form textarea {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid var(--blue);
+    display: block;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--yellow);
+    font-weight: 500;
+}
+
+form label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+form label span {
+    font-style: italic;
+}
+
+form label i {
+    padding: 0.2rem 0.5rem;
+    color: var(--light-blue);
+    background-color: var(--blue);
+    margin-right: 0.5rem;
+    font-style: normal;
+}
+
+form .form-question {
+    border-left: 2px solid var(--yellow);
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+form .form-question>div {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+}
+
+.slider {
+    background-color: var(--light-grey);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+form button {
+    margin-left: auto;
+}
+
+form.dark-form textarea {
+    background-color: transparent;
+    border-color: var(--light-blue);
+    color: var(--light-blue);
+}
+
+form.dark-form textarea:focus {
+    border-color: var(--yellow);
+}
