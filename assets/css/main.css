@@ -857,6 +857,10 @@ form textarea {
     font-size: 0.9rem;
 }
 
+form input[type="checkbox"] {
+    width: unset;
+}
+
 form input:focus,
 form textarea:focus {
     outline: none;
@@ -981,4 +985,86 @@ form.dark-form textarea:focus {
     font-weight: 300;
     font-size: 0.8rem;
     margin: 0.25rem 0 1rem 0;
+}
+
+/* ----------------------------------- */
+
+/* APPLICATION PAGE */
+
+.application-form-part {
+    display: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#application-general-questions {
+    display: block;
+}
+
+/* #application-medical-history {
+    display: block;
+} */
+
+/* #application-terms {
+    display: block;
+} */
+
+#application-medical-history input,
+#application-medical-history textarea {
+    margin-bottom: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form h6 {
+    font-family: var(--sans-serif);
+    font-size: 1.2rem;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+
+form .question-heading span {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+}
+
+form .question-heading h4 {
+    color: var(--blue);
+    margin: 1.5rem 0 1rem 0;
+    border-bottom: 2px solid var(--blue);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    font-size: 1.4rem;
+}
+
+#application-form .next-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#application-form .prev-button,
+#application-form .next-button {
+    margin: unset;
+}
+
+#application-terms p span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
 }

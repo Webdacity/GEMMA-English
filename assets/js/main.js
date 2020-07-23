@@ -14,6 +14,10 @@ const closeNav = () => {
     $(".navbar-page-wrapper").fadeOut(1000)
 }
 
+$(".navbar-page-wrapper").click(() => {
+    closeNav();
+})
+
 // Hide Navbar on Scroll
 
 var prevScrollpos = window.pageYOffset;
@@ -42,3 +46,20 @@ $("form .form-rating span").click(function () {
     $("form .form-rating span").removeClass("clicked");
     $(this).addClass("clicked");
 });
+
+
+// Application Form
+
+function formNext(fromID, toID) {
+    event.preventDefault();
+    $(`#${fromID}`).fadeOut();
+    $(`#${toID}`).fadeIn();
+
+
+    window.scrollTo({
+        top: 300,
+        behavior: 'smooth'
+    })
+
+
+}
