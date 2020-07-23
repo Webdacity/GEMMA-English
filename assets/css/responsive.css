@@ -112,6 +112,22 @@
         width: 60vw;
     }
 
+    /* Video */
+
+    .video-frame iframe {
+        position: absolute;
+        top: 0;
+        left: 2.5%;
+        width: 95%;
+        height: 100%;
+    }
+
+    .video-frame .video-overlay {
+        left: 2.5%;
+        width: 95%;
+        height: 100%;
+    }
+
 
     /* Feedback Page */
 
