@@ -662,9 +662,9 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
     <script>
-        $(window).unload(function () {
-            alert("Oi!")
-        });
+        window.onbeforeunload = function (e) {
+            return "Do you want to exit this page?";
+        };
     </script>
 
 </body>

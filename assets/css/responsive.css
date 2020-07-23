@@ -73,6 +73,19 @@
         margin-top: 2rem;
     }
 
+    .section-home-landing {
+        padding: 5rem 0 2rem 0;
+    }
+
+    .section-home-landing .video-frame {
+        margin-top: 3rem;
+    }
+
+    .video-frame .video-overlay {
+        height: 100%;
+        margin-top: 0;
+    }
+
 
     /* Footer */
 

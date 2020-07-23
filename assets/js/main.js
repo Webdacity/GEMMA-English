@@ -47,5 +47,14 @@ $("form .form-rating span").click(function () {
     $(this).addClass("clicked");
 });
 
+// Video
+const iframe = document.querySelector('.video-frame iframe');
+const player = new Vimeo.Player(iframe);
+
+$(".video-frame .video-overlay button").click(() => {
+    $(".video-overlay").fadeOut("slow");
+    player.play()
+})
+
 
 // Application Form

@@ -561,6 +561,40 @@ footer a:hover {
 }
 
 
+/* Video */
+
+.video-frame {
+    display: flex;
+    justify-content: center;
+}
+
+.video-frame .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    z-index: 10;
+    background-color: var(--white);
+    -webkit-box-shadow: 5px 5px 8px 5px rgba(26, 26, 26, 0.15);
+    -moz-box-shadow: 5px 5px 8px 5px rgba(26, 26, 26, 0.15);
+    box-shadow: 5px 5px 8px 5px rgba(26, 26, 26, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-frame .video-overlay img {
+    width: 30%;
+}
+
+.video-frame .video-overlay button {
+    margin-top: 1rem;
+}
+
+
 
 /* ------------------------------------------------ */
 
@@ -569,16 +603,9 @@ footer a:hover {
 /* Home Landing Section */
 
 .section-home-landing {
-    padding: 0;
-    width: 100vw;
-    min-height: 100vh;
+    padding: 3rem 0;
 }
 
-.section-home-landing img {
-    width: 90%;
-    display: block;
-    margin: auto;
-}
 
 /* Home About Section */
 
