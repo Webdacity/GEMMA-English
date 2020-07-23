@@ -31,6 +31,12 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
+// Page Loader
+
+window.onload = (event) => {
+    $(".loader").fadeOut(1000);
+};
+
 // Footer
 $(document).ready(() => {
 
@@ -48,13 +54,17 @@ $("form .form-rating span").click(function () {
 });
 
 // Video
-const iframe = document.querySelector('.video-frame iframe');
-const player = new Vimeo.Player(iframe);
+const pageName = window.location.pathname;
+if (pageName === "/" || pageName === "/index.html" || pageName === "/about.html") {
+    const iframe = document.querySelector('.video-frame iframe');
+    const player = new Vimeo.Player(iframe);
 
-$(".video-frame .video-overlay button").click(() => {
-    $(".video-overlay").fadeOut("slow");
-    player.play()
-})
+    $(".video-frame .video-overlay button").click(() => {
+        $(".video-overlay").fadeOut("slow");
+        player.play()
+    })
+}
+
 
 
 // Application Form
