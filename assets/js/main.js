@@ -49,17 +49,3 @@ $("form .form-rating span").click(function () {
 
 
 // Application Form
-
-function formNext(fromID, toID) {
-    event.preventDefault();
-    $(`#${fromID}`).fadeOut();
-    $(`#${toID}`).fadeIn();
-
-
-    window.scrollTo({
-        top: 300,
-        behavior: 'smooth'
-    })
-
-
-}
