@@ -358,10 +358,6 @@ footer a:hover {
     color: var(--yellow);
 }
 
-.footer-contact a {
-    text-transform: lowercase;
-}
-
 .footer-contact a i {
     margin-right: 0.4rem;
 }
