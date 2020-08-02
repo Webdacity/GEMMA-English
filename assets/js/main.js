@@ -1,5 +1,5 @@
-// const api_url = "https://gemma-backend.herokuapp.com";
-const api_url = "http://localhost:3000";
+const api_url = "https://gemma-backend.herokuapp.com";
+// const api_url = "http://localhost:3000";
 
 
 // ANIMATIONS
@@ -125,7 +125,7 @@ const submitForm = (formID, formURL) => {
 
     let formData = $(`#${formID}`).serializeArray();
 
-    if (formID === "website-feedback") {
+    if (formID === "website-form") {
         sendForm(formData, formURL)
     }
 
