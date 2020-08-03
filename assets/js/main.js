@@ -164,10 +164,25 @@ const submitForm = (formID, formURL) => {
             value: symptoms
         })
 
+        formData.push({
+            name: "cost-terms",
+            value: "I agree to the terms of cancellation."
+        })
+
+        let videoTerms = [];
+        for (let k = 0; k <= 4; k++) {
+            if ($(`#video-consent >div:nth-child(${k}) input`).is(":checked")) {
+                videoTerms.push($(`#video-consent >div:nth-child(${k}) label`).html())
+            }
+        }
+
+        formData.push({
+            name: "video-terms",
+            value: videoTerms
+        })
+
         sendForm(formData, formURL)
     }
-
-    console.log(formData)
 }
 
 // Send Form Data
