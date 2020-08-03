@@ -1,5 +1,5 @@
-const api_url = "https://gemma-backend.herokuapp.com";
-// const api_url = "http://localhost:3000";
+// const api_url = "https://gemma-backend.herokuapp.com";
+const api_url = "http://localhost:3000";
 
 
 // ANIMATIONS
@@ -129,7 +129,7 @@ const submitForm = (formID, formURL) => {
         sendForm(formData, formURL)
     }
 
-    // Sessions Form Data Exception (Ratings)
+    // Sessions Form
     else if (formID === "session-form") {
 
         // check for session ratings
@@ -147,7 +147,26 @@ const submitForm = (formID, formURL) => {
         sendForm(formData, formURL)
     }
 
-    // Send Data
+    // Application Form
+    else if (formID === "application-form") {
+
+        // Symptoms
+        let symptomLength = $("#symptom-checks").find("input").length;
+        let symptoms = []
+        for (let j = 1; j <= symptomLength + 1; j++) {
+            if ($(`#symptom-checks .form-check:nth-child(${j}) input`).is(":checked")) {
+                symptoms.push($(`#symptom-checks .form-check:nth-child(${j}) label`).html());
+            }
+        }
+
+        formData.push({
+            name: "question6-1",
+            value: symptoms
+        })
+
+        sendForm(formData, formURL)
+    }
+
     console.log(formData)
 }
 
@@ -175,4 +194,5 @@ const sendForm = (formData, formURL) => {
 
 const fillFIelds = () => {
     $("form textarea").val("hytg")
+    $("form input").val("hytg")
 }
