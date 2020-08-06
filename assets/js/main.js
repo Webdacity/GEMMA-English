@@ -170,7 +170,7 @@ const submitForm = (formID, formURL) => {
         });
 
         formData.push({
-            name: "cost-terms",
+            name: "medical-terms",
             value: "I have read the recommendation for medical testing"
         })
 
