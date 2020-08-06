@@ -162,15 +162,20 @@ const submitForm = (formID, formURL) => {
         formData.push({
             name: "question6-1",
             value: symptoms
-        })
+        });
 
         formData.push({
             name: "cost-terms",
             value: "I agree to the terms of cancellation."
+        });
+
+        formData.push({
+            name: "cost-terms",
+            value: "I have read the recommendation for medical testing"
         })
 
         let videoTerms = [];
-        for (let k = 0; k <= 4; k++) {
+        for (let k = 0; k <= 3; k++) {
             if ($(`#video-consent >div:nth-child(${k}) input`).is(":checked")) {
                 videoTerms.push($(`#video-consent >div:nth-child(${k}) label`).html())
             }
@@ -201,7 +206,7 @@ const sendForm = (formData, formURL) => {
             if (result.status === 500) {
                 alert(result.data.message)
             } else {
-                showSubmissionModal("Thank you for submitting your feedback!");
+                showSubmissionModal("Thank you for your submission!");
             }
         });
 
