@@ -7,13 +7,11 @@ const api_url = "https://gemma-backend.herokuapp.com";
 // Navbar Open & Close
 
 const openNav = () => {
-    // $(".navbar-content").css("width", "25vw");
     $(".navbar").addClass("open");
     $(".navbar-page-wrapper").fadeIn(1000)
 }
 
 const closeNav = () => {
-    // $(".navbar-content").css("width", "0");
     $(".navbar").removeClass("open");
     $(".navbar-page-wrapper").fadeOut(1000)
 }
@@ -172,7 +170,12 @@ const submitForm = (formID, formURL) => {
         formData.push({
             name: "medical-terms",
             value: "I have read the recommendation for medical testing"
-        })
+        });
+
+        formData.push({
+            name: "privacy-terms",
+            value: "I have read the terms of the Privacy Policy"
+        });
 
         let videoTerms = [];
         for (let k = 0; k <= 3; k++) {
