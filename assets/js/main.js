@@ -1,5 +1,5 @@
-// const api_url = "https://gemma-backend.herokuapp.com";
-const api_url = "http://localhost:3000";
+const api_url = "https://gemma-backend.herokuapp.com";
+// const api_url = "http://localhost:3000";
 
 
 // ANIMATIONS
@@ -187,6 +187,11 @@ const submitForm = (formID, formURL) => {
         formData.push({
             name: "video-terms",
             value: videoTerms
+        })
+
+        formData.push({
+            name: "german-application",
+            value: false
         })
 
         sendForm(formData, formURL)
