@@ -1,5 +1,5 @@
-const api_url = "https://gemma-backend.herokuapp.com";
-// const api_url = "http://localhost:3000";
+// const api_url = "https://gemma-backend.herokuapp.com";
+const api_url = "http://localhost:3000";
 
 
 // ANIMATIONS
@@ -83,9 +83,9 @@ if (pageName === "/" || pageName === "/index.html" || pageName === "/about.html"
 
 if (pageName === "/feedback.html" || pageName === "/application.html") {
     axios({
-            method: "get",
-            url: "https://gemma-backend.herokuapp.com/ping"
-        })
+        method: "get",
+        url: "https://gemma-backend.herokuapp.com/ping"
+    })
         .then(result => {
             console.log("Server Pinged: " + result.status)
         })
@@ -132,14 +132,18 @@ const submitForm = (formID, formURL) => {
 
         // check for session ratings
         for (let i = 1; i <= 3; i++) {
-            if ($(`#question${i}-rating`).find('span.clicked').length === 0) {
-                return alert("Please ensure that you have entered the appropriate rating for questions 1 - 3");
+            if ($(`#question${i}-rating span.clicked`).html() === undefined) {
+                formData.push({
+                    name: `question${i}-rating`,
+                    value: "No Rating"
+                })
+            } else {
+                formData.push({
+                    name: `question${i}-rating`,
+                    value: $(`#question${i}-rating span.clicked`).html()
+                })
             }
 
-            formData.push({
-                name: `question${i}-rating`,
-                value: $(`#question${i}-rating span.clicked`).html()
-            })
         }
 
         sendForm(formData, formURL)
@@ -204,10 +208,10 @@ const sendForm = (formData, formURL) => {
 
     showLoader();
     axios({
-            method: "post",
-            url: `${api_url}${formURL}`,
-            data: formData
-        })
+        method: "post",
+        url: `${api_url}${formURL}`,
+        data: formData
+    })
         .then(result => {
             console.log(result.data);
             hideLoader()
